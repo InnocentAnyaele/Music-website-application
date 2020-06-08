@@ -1,0 +1,170 @@
+.intro {
+    height: 100vh;
+    position: relative;
+    color: #fff;
+      }
+  
+      .intro h4{
+          color: #fff;
+    font-weight: 600;
+    font-size: 4rem;
+
+      }
+  
+      .intro h3{
+          font-size: 2.5rem;
+          color: yellow;
+    font-weight: 300;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(20, end),
+      blink-caret .75s step-end infinite;
+          }
+
+          @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+          }
+          
+          /* The typewriter cursor effect */
+          @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: white; }
+          }
+
+      .intro-image {
+          background-image: url(img/bg3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+
+  }
+
+  .navbar ul li {
+      font-weight: bolder;
+      font-size: 15px;
+  }
+  
+  .navbar {
+      padding-right : 50px;
+      background-color: transparent;
+      backdrop-filter: blur(5px);
+  }
+
+
+
+  .navbar a:hover, a:focus, a:active {
+    color: #999;
+    text-decoration: none;
+}
+.navbar a {
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    text-decoration: none;
+    transition: color 0.1s, background-color 0.1s;
+}
+.navbar a {
+    position: relative;
+    display: block;
+    padding: 16px 0;
+    margin: 0 12px;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
+    color: #000;
+}
+.navbar a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.1s,transform 0.2s ease-out;
+}
+.navbar a:active::before {
+    background-color: #000;
+}
+.navbar a:hover::before, a:focus::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+}
+
+.about-card {
+  border: 1px solid black;
+  width: 100%;
+  overflow: hidden;
+}
+
+.about-card img {
+  width: 100%;
+  height: 100%;
+      transition: all 2s ease-in-out;
+}
+
+.about-card:hover img {
+      transform: scale(2,2)
+}
+
+.work-box {
+  width: 280px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: #fff;
+}
+
+.work-box:hover img {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.work-img {
+  display: block;
+  overflow: hidden;
+}
+
+.work-img img {
+  transition: all 1s;
+}
+
+.work-content {
+  padding: 2rem 3% 1rem 4%;
+}
+
+.work-content .w-more {
+  color: #4e4e4e;
+  font-size: .8rem;
+}
+
+.work-content .w-more .w-ctegory {
+  color: #0078ff;
+}
+
+.work-content .w-like {
+  font-size: 2.5rem;
+  color: #0078ff;
+  float: right;
+}
+
+.work-content .w-like a {
+  color: #0078ff;
+}
+
+.work-content .w-like .num-like {
+  font-size: .7rem;
+}
+
+.w-title {
+  font-size: 1.2rem;
+}
+

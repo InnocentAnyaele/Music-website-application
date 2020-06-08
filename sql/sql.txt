@@ -1,0 +1,7 @@
+song
+
+admin - log, name, password
+
+album - log, title, date, artist, image
+
+music - log, title, artist, date, image, song, album
