@@ -116,7 +116,8 @@ include ('pages/conn.php');
 <div class="row" >
     <?php
 $selectmusic = mysqli_query($conn,("SELECT * FROM `music` ORDER BY `date` DESC"));
-while ($row = mysqli_fetch_assoc($selectmusic)){
+if ($selectmusic) {
+  while ($row = mysqli_fetch_assoc($selectmusic)){
     ?>
 
 <div class="work-box shadow rounded" style=" margin-bottom: 10px; margin-left: 20px; margin-right: 20px; margin-top: 20px;">
@@ -147,7 +148,9 @@ while ($row = mysqli_fetch_assoc($selectmusic)){
 
           <?php
 }
-if (mysqli_num_rows($selectmusic)<1){
+}
+
+if (!$selectmusic){
     ?>
 
 <div class="container">
@@ -208,7 +211,9 @@ if (isset($_POST['playmusic'])){
 <div class="row" >
     <?php
 $select = mysqli_query($conn,("SELECT * FROM `album` ORDER BY `date` DESC"));
-while ($row = mysqli_fetch_assoc($select)){
+
+if ($select) {
+  while ($row = mysqli_fetch_assoc($select)){
     ?>
 <div class="work-box shadow rounded" style=" margin-bottom: 10px; margin-left: 20px; margin-right: 20px; margin-top: 20px;">
               <div class="work-img ">
@@ -237,7 +242,10 @@ while ($row = mysqli_fetch_assoc($select)){
 
 <?php
 }
-if (mysqli_num_rows($select)<1){
+}
+
+
+if (!$select){
     ?>
 
 <div class="container">

@@ -148,7 +148,7 @@ if (isset($_POST['addmusic'])){
           <input type="text" value="<?php echo $albumlog; ?>" name="albumlog" hidden>
           <ul class="list-group list-group-flush">
           <?php
-$selectmusic = mysqli_query($conn,("SELECT * FROM `music` WHERE `album` <> '$albumlog' "));
+$selectmusic = mysqli_query($conn,("SELECT * FROM `music`"));
 while ($selectmusicrow = mysqli_fetch_assoc($selectmusic)){
           ?>
  
