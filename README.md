@@ -3,6 +3,9 @@ A music web application that allows an artist to upload music and albums made av
 
 ![music1](https://user-images.githubusercontent.com/55434969/110203989-b5feb800-7e68-11eb-80dc-28859073912c.png)
 
+![Screenshot (96)](https://user-images.githubusercontent.com/55434969/110207696-1c8dd100-7e7d-11eb-9002-99f05ab62341.png)
+
+
 ![music2](https://user-images.githubusercontent.com/55434969/110204004-bdbe5c80-7e68-11eb-9720-1d31e6dad81e.png)
 
 ![music3](https://user-images.githubusercontent.com/55434969/110204009-c3b43d80-7e68-11eb-9252-a4a2ff8c1b8c.png)
